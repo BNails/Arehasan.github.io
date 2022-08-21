@@ -5,44 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Are Hasan</title>
-    <link rel="stylesheet" href="stylee.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/87401c2906.js" crossorigin="anonymous"></script>
 </head>
-<header>
-<h1 id="h1">Hello, I'm <span id="name">Are Hasan</span>.</h1>
-<h1 id="h11">I'm a full-stack engineer.</h1>
-<a href="#contact"><h1 id="button">Contact me</h1></a>
-</header>
 <body>
-    <nav id="navi">
-        <ul>
-            <a href="#ab"><li>About</li></a>
-            <a href="#ac"><li>Knowledge</li></a>
-         </ul>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">Web Needs</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__links" id="services-page">Services</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#contacts" class="button" id="contact-page">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <div>
-      <a id="ab">  <h2 id="h2">ABOUT</h2></a>
+    
+    
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero__container">
+        <h1 class="hero__heading">The greatest dreams are always <span>Unrealistic.</span></h1>
+        <p class="hero__description">Bring your ideas to life</p>
+        <button class="main__btn"><a href="#about">View our work</a></button>
+        </div>
     </div>
-    <a id="ac"><h3>Looking for a good website?</h3></a>
-    <div id="pa">
-        <p>Well, you have come to the right place! I am a blog/website designer based in Kurdistan.</p>
-        <p>You can expect fast and very good responsive websites from me!</p>
-        
+    <!-- About Section -->
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card"><i class="fa-brands fa-angellist"></i></div>
+            </div>
+            <div class="main__content">
+                <h1>You have an idea about a website?</h1>
+                <p>We are able to provide your needs and imagination. When thinking about making a website it's all about the design and how it hooks readers.</p>
+                <button class="main__btn"><a href="#contacts">Contact</a></button>
+            </div>
+        </div>
     </div>
-    <div id="img"><img src="https://sinvistacreations.com/wp-content/uploads/2016/10/Slider-Words.png" alt="ideas"></div>
-        <div><h2 id="h3">KNOWLEDGE</h2></div>
-    <div>
-        <img src="https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.png" alt="html5 logo">
-        <img src="https://www.freepnglogos.com/uploads/javascript-png/js-outline-javascript-logo-download-clip-art-with-transparent-25.png" alt="JS logo">
-        <img src="https://cdn-icons-png.flaticon.com/512/6528/6528599.png" alt="">
+    <!-- Services Section -->
+    <div class="services" id="services">
+        <h1>Our Services</h1>
+        <div class="services__wrapper">
+            <div class="services__card">
+                <div class="services__card--img">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="services__card--txt">
+                    <h2>HTML</h2>
+                </div>
+            </div>
+            <div class="services__card">
+                <div class="services__card--img">
+                    <i class="fa-brands fa-css3"></i>
+                </div>
+                <div class="services__card--txt">
+                    <h2>CSS</h2>
+                </div>
+            </div>
+            <div class="services__card">
+                <div class="services__card--img">
+                    <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="services__card--txt">
+                    <h2>JS</h2>
+                </div>
+            </div>
+            <div class="services__card">
+                <div class="services__card--img">
+                    <i class="fa-brands fa-git"></i>
+                </div>
+                <div class="services__card--txt">
+                    <h2>GIT</h2>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- Contact Section -->
+    <div class="contacts" id="contacts">
+        <h1>Contact</h1>
+        <div class="main__form">
+        <form action="https://formspree.io/f/moqbqgrp"
+        method="POST">
 
-    <footer id="contact">CONTACT
-        <p>Aro007h@gmail.com</p>
-        <p>Kurdistan/Erbil</p>
-        <p id="are">&copy;Are Hasan 2022</p>
-
+            <input type="text" id="fname" name="firstname" placeholder="Name">
+            
+            <input type="text" id="email" name="email" placeholder="Email">
+            
+            <input type="text" id="subject" name="subject" placeholder="Your Message" >
+            
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="main__footer">
+                <h1>Snapchat: <span>Ari_dizayee</span></h1>
+                <h1>Instagram: <span>Aro._.D</span></h1>
+            
+            <div class="main__copy">
+                <h2>ARE HASAN ©2022</h2>
+            </div>
+        </div>
+        </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
